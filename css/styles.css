@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-body, html {
+body {
     font: 16px/1.5 'Roboto', Sans-serif !important;
     height: 100%;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-1.jpeg") !important;
+    background-size: auto 1000px !important;
 }
 header {
     display: inline-block;
     height: 85px;
     color: #fff;
+}
+.header {
+    background: #60B857;
 }
 nav {
     float: right;
@@ -17,6 +21,10 @@ nav {
 .logo {
     float: left;
     margin-left: 15px;
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
 }
 .logo h1 {
     margin: 0;
@@ -35,15 +43,22 @@ nav {
     display: inline-block;
     font-size: 14px;
     border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
 }
 .menu-item:hover {
     background-color: #26A019;
     cursor: pointer;
 }
-.section-one {
+.section-home {
     height: 100%;
     padding: 0;
     margin: 0;
+}
+.section-restaurant {
+    height: 100%;
+    background: #fff;
+    padding: 15px 15px 0 15px;
 }
 .txt {
     text-align: center;
@@ -82,6 +97,26 @@ nav {
     background: #26A019;
     border: 2px solid #26A019;
 }
+.restaurant {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 5px 5px 5px grey;
+    border-top: 1px solid #ebe5e5;
+    border-left: 1px solid #ebe5e5;
+}
+.restaurant-img {
+    width: 290px;
+    height: 190px;
+}
+.restaurant-txt {
+    text-align: center;
+}
+.reset {
+    background: #fff !important;
+}
 @media (min-width: 640px) {
     html, body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-2.jpeg") !important;
@@ -103,5 +138,20 @@ nav {
     }
     .menu-item {
         font-size: 16px;
+    }
+    .section-restaurant {
+        padding: 20px;
+    }
+    .restaurant {
+        width: 49% !important;
+        display: inline-block;
+        margin-right: 10px;
+        float: none !important;
+    }
+    .restaurant-img {
+        float: left;
+    }
+    .restaurant-txt {
+        float: right;
     }
 }
