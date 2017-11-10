@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body, html {
+    font: 16px/1.5 'Roboto', Sans-serif !important;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-1.jpeg") !important;
+}
+header {
+    display: inline-block;
+    height: 85px;
+    color: #fff;
+}
+nav {
+    float: right;
+    height: 100%;
+}
+.logo {
+    float: left;
+    margin-left: 15px;
+}
+.logo h1 {
+    margin: 0;
+    margin-top: 21px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.menu {
+    padding: 30px 5px 0 0;
+    height: 100%;
+}
+.menu-item {
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.menu-item:hover {
+    background-color: #26A019;
+    cursor: pointer;
+}
+.section-one {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.txt {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: #fff;
+    margin: 0 15px 0 15px;
+}
+.txt h1 {
+    margin: 0;
+}
+.txt p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.btn-transparent {
+    background: transparent;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+}
+.btn-transparent:hover {
+    background: #26A019;
+    border: 2px solid #26A019;
+}
+@media (min-width: 640px) {
+    html, body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-2.jpeg") !important;
+        background-size: cover !important;
+    }
+    nav {
+        float: left;
+    }
+    .logo {
+        height: 100%;
+        padding-right: 15px;
+        margin-left: 75px;
+    }
+    .txt {
+        top: 200px;
+    }
+    .btn-transparent {
+        width: 15%;
+    }
+    .menu-item {
+        font-size: 16px;
+    }
+}
