@@ -57,7 +57,6 @@ nav {
 }
 .section-restaurant {
     height: 100%;
-    background: #fff;
     padding: 15px 15px 0 15px;
 }
 .txt {
@@ -101,24 +100,30 @@ nav {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-    background: #fff;
     text-align: center;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ebe5e5;
     border-left: 1px solid #ebe5e5;
+}
+.restaurant:hover {
+    background: #26A019;
 }
 .restaurant-img {
     width: 290px;
     height: 190px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ebe5e5;
+    border-left: 1px solid #ebe5e5;
 }
 .restaurant-txt {
+    color: #fff;
     text-align: center;
 }
 .reset {
     background: #fff !important;
 }
 @media (min-width: 640px) {
-    html, body {
+    body {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-2.jpeg") !important;
         background-size: cover !important;
     }
