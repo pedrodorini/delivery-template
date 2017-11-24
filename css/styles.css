@@ -103,6 +103,7 @@ nav {
 a {
     text-decoration: none;
     color: #555;
+    cursor: pointer;
 }
 .section-restaurant-header {
     height: auto;
@@ -129,9 +130,6 @@ a {
     border-top: 1px solid #ebe5e5;
     border-left: 1px solid #ebe5e5;
 }
-.dishes:hover {
-    background: #26A019;
-}
 .dishes {
     width: 100%;
     border-top: 1px solid #ebe5e5;
@@ -146,8 +144,22 @@ a {
     margin-top: 0;
     text-align: left;
 }
-.dishes p:last-child {
+.dishes a {
     text-align: right;
+    float: right;
+    color: #3c8dbc;
+    cursor: pointer;
+}
+.dishes:hover {
+    background: #26A019;
+    color: #fff;
+}
+.dishes:hover a {
+    color: #fff;
+}
+.price {
+    display: inline-block;
+    text-align: left !important;
     font-size: 14px;
     font-weight: bold;
     margin: 0;
@@ -166,6 +178,83 @@ a {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ebe5e5;
     border-left: 1px solid #ebe5e5;
+}
+.cart-item {
+    width: 100%;
+    border-top: 1px solid #ebe5e5;
+    border-bottom: 1px solid #ebe5e5;
+    padding: 0 15px 5px 15px;
+    margin-bottom: 15px;
+}
+.dish-name {
+    text-align: left;
+    display: inline-block;
+}
+.add-remove {
+    margin-top: 20px;
+    float: right;
+}
+.cart-price {
+    text-align: right !important;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+.cart-item:hover {
+    background: #26A019;
+    color: #fff;
+}
+.cart-item:hover .minus{
+    content: url('../images/minus-white.png')
+}
+.cart-item:hover .plus{
+    content: url('../images/plus-white.png')
+}
+.totals {
+    padding: 0 15px 0 15px;
+}
+.totals p {
+    text-align: left;
+    display: inline-block;
+}
+.total-value {
+    float: right;
+}
+.clean-pay {
+    padding: 0 10px 0 10px;
+    width: 100%;
+    display: inline-block;
+}
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    background: #555;
+    color: #fff;
+}
+.clean {
+    background: #d43f3a;
+}
+.pay {
+    background: #60B857;
+    margin-bottom: 10px;
+}
+.pay:hover {
+    background: #26A019;
+}
+.clean:hover {
+    background: #b31c1c
+}
+.plus {
+    display: inline;
+    content: url('../images/plus.png')
+}
+.minus {
+    display: inline;
+    content: url('../images/minus.png')
+}
+.add-remove-m {
+    margin-right: 5px;
 }
 @media (min-width: 640px) {
     nav {
@@ -218,11 +307,20 @@ a {
     }
     .section-restaurant-menu {
         float: left;
-        width: 48%;
+        width: 66%;
     }
     .section-restaurant-cart {
         float: right;
         margin: 15px 15px 15px 0px;
-        width: 48%;
+        width: 30%;
+    }
+    .clean {
+        float: right;
+        width: 30%;
+    }
+    .pay {
+        margin: 0 0 0 15px;
+        float: right;
+        width: 30%;
     }
 }
