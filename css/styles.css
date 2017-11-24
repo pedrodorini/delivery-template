@@ -3,15 +3,13 @@ body {
     font: 16px/1.5 'Roboto', Sans-serif !important;
     height: 100%;
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-1.jpeg") !important;
-    background-size: auto 1000px !important;
+    background: #ecf0f5 !important;
+    color: #555 !important;
 }
 header {
     display: inline-block;
     height: 85px;
     color: #fff;
-}
-.header {
     background: #60B857;
 }
 nav {
@@ -34,44 +32,24 @@ nav {
     cursor: pointer;
 }
 .menu {
-    padding: 30px 5px 0 0;
     height: 100%;
 }
 .menu-item {
-    padding: 5px 10px 5px 10px;
+    padding: 35px 10px 5px 10px;
     text-transform: uppercase;
     display: inline-block;
     font-size: 14px;
-    border-radius: 15px;
     text-decoration: none;
+    height: 100%;
     color: #fff;
 }
 .menu-item:hover {
     background-color: #26A019;
     cursor: pointer;
 }
-.section-home {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
 .section-restaurant {
     height: 100%;
     padding: 15px 15px 0 15px;
-}
-.txt {
-    text-align: center;
-    position: relative;
-    top: 100px;
-    color: #fff;
-    margin: 0 15px 0 15px;
-}
-.txt h1 {
-    margin: 0;
-}
-.txt p {
-    margin: 0;
-    margin-bottom: 15px;
 }
 .container {
     width: 80%;
@@ -97,11 +75,12 @@ nav {
     border: 2px solid #26A019;
 }
 .restaurant {
+    background: #fff;
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
     text-align: center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ebe5e5;
     border-left: 1px solid #ebe5e5;
 }
@@ -111,22 +90,84 @@ nav {
 .restaurant-img {
     width: 290px;
     height: 190px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     border-top: 1px solid #ebe5e5;
     border-left: 1px solid #ebe5e5;
 }
 .restaurant-txt {
-    color: #fff;
     text-align: center;
 }
 .reset {
     background: #fff !important;
 }
+a {
+    text-decoration: none;
+    color: #555;
+}
+.section-restaurant-header {
+    height: auto;
+    margin: 15px 15px 0 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ebe5e5;
+    border-left: 1px solid #ebe5e5;
+    background: #fff;
+}
+.section-restaurant-header img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ebe5e5;
+    border-left: 1px solid #ebe5e5;
+}
+.section-restaurant-menu {
+    background: #fff;
+    height: auto;
+    margin: 15px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ebe5e5;
+    border-left: 1px solid #ebe5e5;
+}
+.dishes:hover {
+    background: #26A019;
+}
+.dishes {
+    width: 100%;
+    border-top: 1px solid #ebe5e5;
+    border-bottom: 1px solid #ebe5e5;
+    padding: 0 15px 5px 15px;
+    margin-bottom: 15px;
+}
+.dishes h1 {
+    margin-bottom: 0;
+}
+.dishes p {
+    margin-top: 0;
+    text-align: left;
+}
+.dishes p:last-child {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+.restaurant-info {
+    text-align: center;
+}
+.restaurant-menu {
+    text-align: center;
+}
+.section-restaurant-cart {
+    background: #fff;
+    height: auto;
+    margin: 0 15px 15px 15px;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ebe5e5;
+    border-left: 1px solid #ebe5e5;
+}
 @media (min-width: 640px) {
-    body {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-2.jpeg") !important;
-        background-size: cover !important;
-    }
     nav {
         float: left;
     }
@@ -142,6 +183,7 @@ nav {
         width: 15%;
     }
     .menu-item {
+        padding: 30px 10px 5px 10px;
         font-size: 16px;
     }
     .section-restaurant {
@@ -158,5 +200,29 @@ nav {
     }
     .restaurant-txt {
         float: right;
+        margin-right: 25px;
+    }
+    .section-restaurant-header img {
+        float: left;
+        width: 20%;
+        height: 100%;
+        margin-top: 20px;
+    }
+    .restaurant-info {
+        width: 50%;
+        display: inline-block;
+    }
+    .restaurant-info p, .restaurant-info h1{
+        margin-left: 15px;
+        text-align: left
+    }
+    .section-restaurant-menu {
+        float: left;
+        width: 48%;
+    }
+    .section-restaurant-cart {
+        float: right;
+        margin: 15px 15px 15px 0px;
+        width: 48%;
     }
 }
