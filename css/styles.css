@@ -349,6 +349,9 @@ a {
 .payment-form .clean-pay {
     padding: 0;
 }
+.txt-center {
+    text-align: center;
+}
 @media (min-width: 640px) {
     nav {
         float: left;
